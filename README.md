@@ -1,3 +1,6 @@
+
+[Sara's Portfolio Banner](/public/portimg.png)  
+
 # 🌟 Sara's Portfolio
 
 This is my personal **portfolio website**, built to showcase my skills, projects, and experience.  
@@ -25,7 +28,6 @@ app/
 ├── layout.js         # Layout configuration.
 
 └── page.js           # Home page.
-
 
 ## 🌐 Live Demo
 [Click here to visit my portfolio](https://sara12-coder.github.io/SaraPortfolio/)
