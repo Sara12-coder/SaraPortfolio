@@ -16,13 +16,12 @@ const Footer = () => {
     </div>
 
 
-    <div className="sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
-  <div></div>
+    <div className="flex flex-col sm:flex-row items-center justify-center border-t border-gray-400 mx-[10%] mt-12 py-6 text-center sm:text-left">
+  <p className="text-base sm:text-lg md:text-xl text-dark-600 flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
+    Developed by <span className="ml-1 text-red-500">❤️</span> Sara
+  </p>
 
-<p className="text-center sm:text-left text-base sm:text-lg md:text-xl text-dark-600 flex items-center justify-center sm:justify-start">
-  Developed by <span className="ml-1 text-red-500">❤️</span> Sara
-</p>
-  <ul className="flex items-center gap-10 justify-end ml-auto">
+  <ul className="flex flex-wrap items-center gap-6 justify-center sm:justify-end sm:ml-auto">
     <li>
       <a target="_blank" href="https://github.com/Sara12-coder/">Github</a>
     </li>
