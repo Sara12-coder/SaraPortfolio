@@ -4,7 +4,7 @@ This is my personal **portfolio website**, built to showcase my skills, projects
 Developed using **Next.js**, **React**, and **Tailwind CSS** for a fast, responsive, and modern design.
 
 ## 🚀 Features
-- ⚡ Built with **Next.js** for performance and SEO.
+- ⚡ Built with **Next.js** for performance.
 - 🎨 **Tailwind CSS** for clean, responsive styling.
 - 📱 Fully responsive design for all screen sizes.
 - 🔗 Social media integrations: GitHub, LinkedIn, Instagram.
@@ -17,10 +17,13 @@ Developed using **Next.js**, **React**, and **Tailwind CSS** for a fast, respons
 
 ## 📂 Project Structure
 app/
-├── components/      # Reusable components (Header, Footer, Navbar, etc.)
-├── globals.css       # Global styles
-├── layout.js         # Layout configuration
-└── page.js           # Home page
+├── components/      # Reusable components (Header, Footer, Navbar, etc.).
+
+├── globals.css       # Global styles.
+
+├── layout.js         # Layout configuration.
+
+└── page.js           # Home page.
 
 
 ## 🌐 Live Demo
