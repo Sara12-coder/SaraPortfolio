@@ -17,10 +17,11 @@ Developed using **Next.js**, **React**, and **Tailwind CSS** for a fast, respons
 
 ## 📂 Project Structure
 app/
-├── components/ # Reusable components (Header, Footer, Navbar, etc.)
-├── globals.css # Global styles
-├── layout.js # Layout configuration
-├── page.js # Home page
+├── components/      # Reusable components (Header, Footer, Navbar, etc.)
+├── globals.css       # Global styles
+├── layout.js         # Layout configuration
+└── page.js           # Home page
+
 
 ## 🌐 Live Demo
 [Click here to visit my portfolio](https://sara12-coder.github.io/SaraPortfolio/)
