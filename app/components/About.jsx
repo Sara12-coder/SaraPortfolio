@@ -1,0 +1,72 @@
+import React from 'react'
+import Image from 'next/image'
+import { assets } from '@/assets/assets' 
+import { infoList } from '@/assets/assets'
+import { motion } from "motion/react"
+
+
+const About = () => {
+  return (
+    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 1}}>
+    <motion.h4
+    initial={{opacity: 0,y: -20}}
+    whileInView={{opacity: 1,y:0}}
+    transition={{duration: 0.5,delay:0.3}}
+    className='text-center mb-2 text-lg font-Ovo'>
+    Introduction</motion.h4>
+    <motion.h2
+    initial={{opacity: 0,y: -20}}
+    whileInView={{opacity: 1,y:0}}
+    transition={{duration: 0.5,delay:0.5}}
+    className='text-center text-5xl font-Ovo'>
+    About me </motion.h2>
+   
+        
+    <motion.div
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 0.8}}
+    className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+          <motion.div className='w-64  sm:w-80 rounded-3xl max-w-none'>
+            <Image src={assets.sara_image} alt='user' className='w-full rounded-3xl'/>
+          </motion.div>
+          <motion.div
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.6,delay:0.8}} className='flex-1'>
+          <p className='mb-10 max-w-2xl font-Ovo'> I have a strong interest in both Cybersecurity and Data Science, and I’m actively building my skills in these domains. In cybersecurity, I’m learning about ethical hacking, network security, and vulnerability assessment, with hands-on experience using tools like Wireshark and Nmap. At the same time, I’m exploring data science concepts such as data analysis, machine learning, and visualization using Python, Pandas, and other tools. I’m passionate about using technology to solve real-world problems while ensuring data and systems remain secure.</p>
+          
+          <motion.ul 
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.8,delay:1}}
+          className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+            {infoList.map(({icon, iconDark, title, description},
+            index)=>(
+              <motion.li
+              whileInView={{scale:1.05}}
+              className='border-[0.5px]  border-gray-400
+                rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff]
+                hover:translate-y-1 duration-500 
+                hover:shadow-black'
+                 key={index}>
+                <Image src={icon} alt={title} className='w-7 mt-3'/>
+                <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
+                <p className='text-gray-600 text-sm'>{description}</p>
+              </motion.li>
+            ))}
+            </motion.ul>
+           
+              
+              
+            
+            </motion.div>
+    </motion.div>
+    </motion.div>
+  )
+}
+
+export default About
