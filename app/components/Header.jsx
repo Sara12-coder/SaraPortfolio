@@ -36,7 +36,8 @@ const header = () => {
     whileInView={{y: 0,opacity:1}}
     transition={{duration:0.6,delay: 1.2}}
     href="#contact" className= 'px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>Contact me<Image src={assets.right_arrow_white} alt='' className=' w-4'/></motion.a>         
-        <a href="https://drive.google.com/file/d/1KJBb1RX5XFPF1qdozjmMxle0rU9jH1XJ/view?usp=sharing" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>My resume<Image src={assets.download_icon} alt='' className=' w-4'/></a>         
+        <a href="https://drive.google.com/uc?export=download&id=1KJBb1RX5XFPF1qdozjmMxle0rU9jH1XJ"  
+        download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>My resume<Image src={assets.download_icon} alt='' className=' w-4'/></a>         
         </div>     
     </div>   
         ) 
