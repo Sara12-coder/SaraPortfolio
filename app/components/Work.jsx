@@ -26,7 +26,7 @@ const Work = () => {
     transition={{duration:0.7,delay: 0.5}}
     className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
        Welcome to my web development portfolio! Explore the projects I've built, including a Water Quality Checker using data science,
-        a Counter Elevator system with IoT integration, and an NLP-based Voice Assistant,each showcasing practical tech-driven solutions.
+       a Counter Elevator system with IoT integration, and an NLP-based Voice Assistant,each showcasing practical tech-driven solutions.
     </motion.p>
       
     <motion.div
