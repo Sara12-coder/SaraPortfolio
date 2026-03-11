@@ -61,17 +61,17 @@ export const workData = [
     {
         title: 'Water Quality Checker',
         description: 'Data Science',
-        bgImage: '/work/pj1.png',
+        bgImage: '/pj1.png',
     },
     {
         title: 'Counter Elevator',
         description: 'IOT',
-        bgImage: '/work/pj2.png',
+        bgImage: '/pj2.png',
     },
     {
         title: 'Voice Assistant',
         description: 'NLP',
-        bgImage: '/work/pj3.png',
+        bgImage: '/pj3.png',
     }
 ]
   
