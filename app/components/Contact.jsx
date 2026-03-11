@@ -5,25 +5,18 @@ import { assets } from '@/assets/assets';
 import { motion } from "motion/react";
 
 const Contact = () => {
-  const [result, setResult] = useState("");
+   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
-
     const formData = new FormData(event.target);
 
-    
-    const body = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message")
-    };
+    formData.append("access_key", "03f37335-8195-4931-805e-f04dcebca8b9");
 
-    const response = await fetch("/api/contact", {
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body)
+      body: formData
     });
 
     const data = await response.json();
@@ -32,11 +25,10 @@ const Contact = () => {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error:", data);
-      setResult(data.message || "Something went wrong");
+      console.log("Error", data);
+      setResult(data.message);
     }
   };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
